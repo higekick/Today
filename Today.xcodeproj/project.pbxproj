@@ -17,6 +17,9 @@
 		7C77467827EBE7C500DAAC42 /* TodayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C77467727EBE7C500DAAC42 /* TodayUITests.swift */; };
 		7C77467A27EBE7C500DAAC42 /* TodayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C77467927EBE7C500DAAC42 /* TodayUITestsLaunchTests.swift */; };
 		7C77468827EBEB0600DAAC42 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C77468727EBEB0600DAAC42 /* Reminder.swift */; };
+		7CE6C02727F18136006B44C0 /* Date+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE6C02627F18136006B44C0 /* Date+Today.swift */; };
+		7CE6C02A27F18765006B44C0 /* ReminderListViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE6C02927F18765006B44C0 /* ReminderListViewController+DataSource.swift */; };
+		7CE6C03127F19CAA006B44C0 /* UIColor+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE6C03027F19CA9006B44C0 /* UIColor+Today.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		7C77467727EBE7C500DAAC42 /* TodayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayUITests.swift; sourceTree = "<group>"; };
 		7C77467927EBE7C500DAAC42 /* TodayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7C77468727EBEB0600DAAC42 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		7CE6C02627F18136006B44C0 /* Date+Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Today.swift"; sourceTree = "<group>"; };
+		7CE6C02927F18765006B44C0 /* ReminderListViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderListViewController+DataSource.swift"; sourceTree = "<group>"; };
+		7CE6C03027F19CA9006B44C0 /* UIColor+Today.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Today.swift"; path = "../../../../Downloads/DisplayingCellInfo/StartingProject/Today/Models/UIColor+Today.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +110,7 @@
 				7C77465627EBE7C300DAAC42 /* AppDelegate.swift */,
 				7C77468627EBEAE500DAAC42 /* Models */,
 				7C77465827EBE7C300DAAC42 /* SceneDelegate.swift */,
-				7C77465A27EBE7C300DAAC42 /* ReminderListViewController.swift */,
+				7CE6C02827F18727006B44C0 /* ListviewController */,
 				7C77465C27EBE7C300DAAC42 /* Main.storyboard */,
 				7C77465F27EBE7C500DAAC42 /* Assets.xcassets */,
 				7C77466127EBE7C500DAAC42 /* LaunchScreen.storyboard */,
@@ -133,9 +139,20 @@
 		7C77468627EBEAE500DAAC42 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7CE6C03027F19CA9006B44C0 /* UIColor+Today.swift */,
 				7C77468727EBEB0600DAAC42 /* Reminder.swift */,
+				7CE6C02627F18136006B44C0 /* Date+Today.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		7CE6C02827F18727006B44C0 /* ListviewController */ = {
+			isa = PBXGroup;
+			children = (
+				7C77465A27EBE7C300DAAC42 /* ReminderListViewController.swift */,
+				7CE6C02927F18765006B44C0 /* ReminderListViewController+DataSource.swift */,
+			);
+			path = ListviewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,10 +286,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CE6C03127F19CAA006B44C0 /* UIColor+Today.swift in Sources */,
+				7CE6C02727F18136006B44C0 /* Date+Today.swift in Sources */,
 				7C77465B27EBE7C300DAAC42 /* ReminderListViewController.swift in Sources */,
 				7C77465727EBE7C300DAAC42 /* AppDelegate.swift in Sources */,
 				7C77465927EBE7C300DAAC42 /* SceneDelegate.swift in Sources */,
 				7C77468827EBEB0600DAAC42 /* Reminder.swift in Sources */,
+				7CE6C02A27F18765006B44C0 /* ReminderListViewController+DataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
