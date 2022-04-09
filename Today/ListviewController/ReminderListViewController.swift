@@ -24,6 +24,10 @@ class ReminderListViewController: UICollectionViewController {
             return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: itemIdentifier)
         }
         
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didPressAddButton(_:)))
+         addButton.accessibilityLabel = NSLocalizedString("Add reminder", comment: "Add button accessibility label")
+         navigationItem.rightBarButtonItem = addButton
+        
         updateSnapshot()
         
         collectionView.dataSource = dataSource
@@ -48,10 +52,23 @@ class ReminderListViewController: UICollectionViewController {
     private func listLayout() -> UICollectionViewCompositionalLayout {
         var listConfiguration = UICollectionLayoutListConfiguration(appearance: .grouped)
         listConfiguration.showsSeparators = false
+        listConfiguration.trailingSwipeActionsConfigurationProvider = makeSwipeAction
         listConfiguration.backgroundColor = .clear
         return UICollectionViewCompositionalLayout.list(using: listConfiguration)
     }
 
+    private func makeSwipeAction(for indexPath: IndexPath?) -> UISwipeActionsConfiguration? {
+        guard let indexPath = indexPath, let id = dataSource.itemIdentifier(for: indexPath) else {return nil}
+        let deleteActionTitle = NSLocalizedString("Delete", comment: "Delete Action Title")
+        let deleteAction = UIContextualAction(style: .destructive, title: deleteActionTitle,
+                                              handler: {[weak self] (_, _, completion) in
+            self?.deleteReminder(id)
+            self?.updateSnapshot()
+            completion(false)
+        }
+        )
+        return UISwipeActionsConfiguration(actions: [deleteAction])
+    }
 
 }
 

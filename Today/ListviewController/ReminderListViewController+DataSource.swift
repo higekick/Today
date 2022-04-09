@@ -75,6 +75,15 @@ extension ReminderListViewController {
         return UICellAccessory.CustomViewConfiguration(customView: button, placement: .leading(displayed: .always))
     }
     
+    func add(_ reminder: Reminder) {
+        reminders.append(reminder)
+    }
+    
+    func deleteReminder(_ id: Reminder.ID) {
+        let idx = reminders.indexOfReminder(with: id)
+        reminders.remove(at: idx)
+    }
+    
     func reminder(for id: Reminder.ID) -> Reminder {
         let index = reminders.indexOfReminder(with: id)
         return reminders[index]
