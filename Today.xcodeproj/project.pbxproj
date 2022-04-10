@@ -31,6 +31,7 @@
 		7CE6C04727F48420006B44C0 /* TextViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE6C04627F48420006B44C0 /* TextViewContentView.swift */; };
 		7CE6C04927F4876D006B44C0 /* DatePickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE6C04827F4876D006B44C0 /* DatePickerContentView.swift */; };
 		7CE6C04F27FD1998006B44C0 /* UIColor+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE6C04E27FD1998006B44C0 /* UIColor+Today.swift */; };
+		7CE6C05128024E65006B44C0 /* ReminderListStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE6C05028024E65006B44C0 /* ReminderListStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		7CE6C04627F48420006B44C0 /* TextViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewContentView.swift; sourceTree = "<group>"; };
 		7CE6C04827F4876D006B44C0 /* DatePickerContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerContentView.swift; sourceTree = "<group>"; };
 		7CE6C04E27FD1998006B44C0 /* UIColor+Today.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Today.swift"; sourceTree = "<group>"; };
+		7CE6C05028024E65006B44C0 /* ReminderListStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				7C77468727EBEB0600DAAC42 /* Reminder.swift */,
+				7CE6C05028024E65006B44C0 /* ReminderListStyle.swift */,
 				7CE6C04E27FD1998006B44C0 /* UIColor+Today.swift */,
 				7CE6C02627F18136006B44C0 /* Date+Today.swift */,
 			);
@@ -341,6 +344,7 @@
 				7CE6C03527F2C828006B44C0 /* ReminderListViewController+Actions.swift in Sources */,
 				7CE6C03727F2EC32006B44C0 /* ReminderViewController.swift in Sources */,
 				7CE6C04F27FD1998006B44C0 /* UIColor+Today.swift in Sources */,
+				7CE6C05128024E65006B44C0 /* ReminderListStyle.swift in Sources */,
 				7CE6C02727F18136006B44C0 /* Date+Today.swift in Sources */,
 				7C77465B27EBE7C300DAAC42 /* ReminderListViewController.swift in Sources */,
 				7CE6C04327F47B4D006B44C0 /* TextFieldContentView.swift in Sources */,
